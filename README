@@ -1,0 +1,54 @@
+This README file contains information on the contents of the mchp-most layer.
+
+Please see the corresponding sections below for details.
+
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: https://git.yoctoproject.org/git/meta-fsl-arm
+  branch: fido
+
+  URI: https://github.com/Freescale/meta-fsl-arm-extra
+  branch: fido
+
+
+Patches
+=======
+
+Please submit any patches against the mchp-most layer to the
+maintainer:
+
+Maintainer: Andrey Shvetsov <andrey.shvetsov@k2l.de>
+
+
+Table of Contents
+=================
+
+  I. Adding the mchp-most layer to your build
+ II. Misc
+
+
+I. Adding the mchp-most layer to your build
+=================================================
+
+In order to use this layer, you need to make the build system aware of it.
+
+Assuming the mchp-most layer exists in your directory for BSP sources (usually
+<bsp-root-directory>/sources), you can add it to the build system by adding the
+location of the mchp-most layer to bblayers.conf (usually locating in
+<bsp-root-directory>/build/conf/), along with any other layers needed.  e.g.:
+
+  BBLAYERS = " \
+    ...
+    ${BSPDIR}/sources/meta-mchp-most \
+    "
+
+
+II. Misc
+========
+
+The project https://github.com/microchip-ais/mchp-fsl-bsp-base.git helps to
+build FSL Community BSP with the Microchip MOST Linux Driver from the scratch.
