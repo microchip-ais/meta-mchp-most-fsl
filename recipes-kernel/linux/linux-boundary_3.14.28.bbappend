@@ -1,4 +1,4 @@
-# Microchip MOST Linux Driver for linux-imx
+# Microchip MOST Linux Driver for linux-boundary
 
 FILESEXTRAPATHS_append := ":${THISDIR}/${PN}-${PV}"
 

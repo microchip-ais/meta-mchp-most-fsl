@@ -1,6 +1,7 @@
 This README file contains information on the contents of the mchp-most layer.
 
-Please see the corresponding sections below for details.
+The layer mchp-most adds the MOST Linux Driver of the Microchip to the recipes
+linux-imx-3.14.28 and linux-boundary-3.14.28 of the Freescale Community BSP.
 
 
 Dependencies
@@ -50,5 +51,6 @@ location of the mchp-most layer to bblayers.conf (usually locating in
 II. Misc
 ========
 
-The project https://github.com/microchip-ais/mchp-fsl-bsp-base.git helps to
-build FSL Community BSP with the Microchip MOST Linux Driver from the scratch.
+To build Freescale Community BSP with the MOST Linux Driver from the scratch or
+see how mchp-most layer can be integrated, you may use the project
+https://github.com/microchip-ais/mchp-fsl-bsp-base.git
